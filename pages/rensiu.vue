@@ -8,6 +8,22 @@ export default defineComponent({
   setup() {
     const items = ref([
       {
+        text: 'hajimeni',
+        to: '/hajimeni',
+      },
+      {
+        text: 'templatesyntax',
+        to: '/templatesyntax',
+      },
+      {
+        text: 'objectsyntax',
+        to: '/objectsyntax',
+      },
+      {
+        text: 'parents',
+        to: '/parents',
+      },
+      {
         text: 'one',
         to: '/one',
       },
