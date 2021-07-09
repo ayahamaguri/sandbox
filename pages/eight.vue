@@ -14,7 +14,7 @@
           <tr v-for="(item, index) in items" :key="index">
             <td>{{ item.name }}</td>
             <td>{{ item.exclud }}</td>
-            <td>{{ includ }}</td>
+            <!-- <td>{{ includ }}</td> -->
           </tr>
         </tbody>
       </v-simple-table>
@@ -22,7 +22,7 @@
   </div>
 </template>
 <script lang="ts">
-import { computed, defineComponent, ref } from '@vue/composition-api'
+import { defineComponent, ref } from '@vue/composition-api'
 
 export default defineComponent({
   setup() {
@@ -39,13 +39,13 @@ export default defineComponent({
       },
     ])
 
-    const includ = computed((items: { exclud: string }) => items.exclud * 1.1)
+    // const includ = computed((items: { exclud: string }) => items.exclud * 1.1)
 
     return {
       taxExclud,
       taxInclud,
       items,
-      includ,
+      // includ,
     }
   },
 })
